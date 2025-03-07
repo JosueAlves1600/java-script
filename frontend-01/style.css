@@ -1,0 +1,30 @@
+h1{
+    background-color: beige;
+    display:flex;
+    border:3px solid black;
+    border-radius: 2px;
+
+}
+button{
+    border-radius: 10px;
+    border-color: rgb(231, 213, 213);
+    
+}
+body{
+   
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 100vh;
+
+}
+input{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    justify-content: space-between;
+    width: 15%;
+    margin-top: 9%;
+    margin: auto;
+    padding: 1%
+    
+}
