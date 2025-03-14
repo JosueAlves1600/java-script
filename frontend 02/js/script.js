@@ -5,12 +5,9 @@ function checarIdade(){
     //se a idade for maior ou igual a 12
     if(idade>=12){
         mensagem="Acesso liberado!!!";
-    }
-    //o codigo do html está conectato com o do js
-    document.getElementById('resposta').innerHTML=mensagem;
-
-    if(idade<12){
+    }else{
         mensagem="Acesso bloqueado!!! ( ͡° ͜ʖ ͡°) ";
     }
+    //o codigo do html está conectato com o do js
     document.getElementById('resposta').innerHTML=mensagem;
 }
