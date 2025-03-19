@@ -3,7 +3,7 @@ function calcularsalariobruto(){
     n1=parseFloat(document.getElementById('n1').value);
     n2=parseFloat(document.getElementById('n2').value);
     salarioBruto=(n1*n2).toFixed(1);
-    mensagem='seu salario bruto';
+    mensagem=`seu salario bruto: ${salarioBruto}`;
     document.getElementById('resposta').innerHTML=mensagem;
 }
     if(media<5000){
