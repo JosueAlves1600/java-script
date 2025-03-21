@@ -1,20 +1,21 @@
 function calcularsalariobruto(){
-    mensagem='';
+    
+    imposto=0;
+    sl=0;
     n1=parseFloat(document.getElementById('n1').value);
     n2=parseFloat(document.getElementById('n2').value);
-    salarioBruto=(n1*n2).toFixed(1);
-    mensagem=`seu salario bruto: ${salarioBruto}`;
-    document.getElementById('resposta').innerHTML=mensagem;
-}
-    if(media<5000){
-        impostomenor=(salarioBruto%15);
-        mensagem=`Imposto: ${media}. Imposto menor que 5000!`
-        }else{
-            impostomaior=(salarioBruto%22);
-        mensagem=`Imposto: ${media}. Imposto maior que 5000!`
-}
-{
+    sb=n1*n2.toFixed(1);
+
+    if(sb<=5000){
+        imposto=sb*0.15;
+    }
+    else{
+        imposto=sb*0.22;
+    }
+    sl=sb-imposto;
+    document.getElementById("resposta").innerHTML=
+    `Salário Bruto: R$${sb}<br>Imposto: R$${imposto}<br>
+    Salário Líquido: R$${sl}` ;
     
 }
-
-
+    
