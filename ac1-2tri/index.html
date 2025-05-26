@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Transporte</title>
+<script src="js/script.js"></script>
+</head>
+<link rel="stylesheet" href="">
+<body>
+<h1>Calcular a viagem</h1>
+<h2>-- Que tipo é o carro?</h2>
+<p>1 - Comum</p>
+<p>2 - Premium</p>
+<p>3 - Vip</p>
+<input type="number" id="Carros" placeholder="coloque o tipo do carro">
+<h2>-- Qual é a distância?</h2>
+<input type="number" id="percurso" placeholder="Coloque a distância da viagem">
+<h2>-- Qual dia na semana é a viagem?</h2>
+<p>1 - Domingo</p>
+<p>2 - Segunda-feira</p>
+<p>3 - Terça-feira</p>
+<p>4 - Quarta-feira</p>
+<p>5 - Quinta-feira</p>
+<p>6 - Sexta-feira</p>
+<p>7 - Sábado</p>
+<input type="number" id="Semana" placeholder="Coloque o dia da semana">
+<h2>-- Qual é a hora da viagem?</h2>
+<input type="number" id="Hora" placeholder="Coloque a hora da viagem">
+<br>
+<br>
+<input type="button" value="Calcular" onclick="calcular()">
+<p id="resposta"></p>
+</body>
+</html>
